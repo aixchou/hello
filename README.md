@@ -1,13 +1,14 @@
 Build your hello world deb
+
 #prepare
 
-    	Ubuntu 18.04
-    	apt-get install dh-make devscripts
-    	cat >>~/.bashrc <<EOF
-    	DEBEMAIL="name@qnap.com"
-   	DEBFULLNAME="name"
+	Ubuntu 18.04
+	apt-get install dh-make devscripts
+	cat >>~/.bashrc <<EOF
+	DEBEMAIL="name@qnap.com"
+	DEBFULLNAME="name"
 	export DEBEMAIL DEBFULLNAME
-    	EOF
+	EOF
 
 #clone this sample
 
