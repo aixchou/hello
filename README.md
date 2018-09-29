@@ -19,7 +19,7 @@ Build your hello world deb
 #customize
 
 	vi helloworld.c
-	dh_make --indep --createorig
+	dh_make --createorig --yes -s
 	vi debian/control
 	#change username description and email
 	
@@ -27,8 +27,8 @@ Build your hello world deb
 
 	dpkg-buildpackage -us -uc
 	#make sure everything is fine
-	ls ../my_hello*
-	#there have 
+	ls ../
+	#../hello_1.0-1_amd64.deb  ../hello_1.0-1.debian.tar.xz  ../hello_1.0-1.dsc  ../hello_1.0.orig.tar.xz
 	./debian/rules clean
 
 #add yml to apply ci flow
